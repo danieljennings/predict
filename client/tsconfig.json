@@ -1,0 +1,25 @@
+{
+    "compilerOptions": {
+        "baseUrl": ".",
+        "outDir": "./dist/",
+        "sourceMap": true,
+        "noImplicitAny": false,
+        "module": "commonjs",
+        "target": "es5",
+        "jsx": "react",
+        "lib": ["es5", "es6", "dom"],
+        "paths": {
+            "shared/*": ["../shared/src/*"]
+        }
+    },
+    "include": [
+        "./src/**/*",
+        "../shared/src/**/*"
+    ],
+    "awesomeTypescriptLoaderOptions": {
+        "reportFiles": [
+            "./src/**/*",
+            "../shared/src/**/*"
+        ]
+    }
+}

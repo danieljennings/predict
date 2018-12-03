@@ -1,0 +1,29 @@
+{
+  "name": "predict-server",
+  "version": "1.0.0-alpha0",
+  "description": "Predict Server",
+  "author": "Daniel Jennings",
+  "license": "MIT",
+  "scripts": {
+    "grunt": "grunt",
+    "grunt-watch": "grunt watch",
+    "start": "npm run grunt && concurrently --kill-others-on-fail \"npm run grunt-watch\" \"npm run start-dev\"",    
+    "start-dev": "SET NODE_ENV=development && nodemon ./dist/server"
+  },
+  "devDependencies": {
+    "@types/express": "^4.16.0",
+    "@types/node": "^10.12.11",
+    "@types/redis": "^2.8.8",
+    "concurrently": "^4.1.0",
+    "grunt": "^1.0.3",
+    "grunt-contrib-copy": "^1.0.0",
+    "grunt-contrib-watch": "^1.1.0",
+    "grunt-ts": "^6.0.0-beta.21",
+    "tslint": "^5.11.0",
+    "typescript": "^3.2.1"
+  },
+  "dependencies": {
+    "express": "^4.16.4",
+    "redis": "^2.8.0"
+  }
+}
