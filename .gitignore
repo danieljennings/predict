@@ -4,4 +4,7 @@
 
 node_modules/
 
-dist/
+server/tscommand*.tmp.txt
+
+server/dist/*
+!server/dist/bootstrap.js

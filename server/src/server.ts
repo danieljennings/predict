@@ -2,6 +2,7 @@ import * as express from 'express';
 import * as bodyParser from 'body-parser';
 import * as path from 'path';
 import { User_t } from 'shared/types/user';
+import { CDBAccess } from './dbaccess';
 
 const app = express();
 const port = process.env.PORT || 3000;
@@ -18,7 +19,7 @@ app.get( '/api/user/:id', ( req, res ) => {
     
     let user: User_t = {
         id: unID,
-        name: 'Bob Dole',
+        name: 'Bob Ross',
     };
     res.send( user );
 } );

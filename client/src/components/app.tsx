@@ -29,7 +29,7 @@ export default class App extends React.Component<{}, {}>
         return (
             <div>
                 <h1>Hello World!</h1>
-                <p>Foo to the barz</p>                
+                <p>Foo to the barz 2</p>                
                 <React.Suspense /* maxDuration={ 1000 } */ fallback={<div>RIP</div>}>
                     <User id={ 0 } />
                 </React.Suspense>

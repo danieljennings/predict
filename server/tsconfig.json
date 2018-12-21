@@ -3,9 +3,10 @@
         "baseUrl": ".",
         "rootDir": "..",
         "outDir": "./dist/",
-        "sourceMap": true,
-        "noImplicitAny": false,
-        "module": "commonjs",
+        "sourceMap": false,
+        "noImplicitAny": true,
+        "preserveConstEnums": true,
+        "module": "none",
         "target": "es6",
         "lib": ["es6"],
         "paths": {
